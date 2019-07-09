@@ -10,7 +10,7 @@ var connection = mysql.createConnection({
 });
 ///connection declare end closure
 connection.query("SELECT * FROM products_custmer", function (err, res) {
-    console.log(res[0]);
+    
     for (i = 0; i < res.length; i++) {
         //for loop start
         var id = res[i].item_id;
