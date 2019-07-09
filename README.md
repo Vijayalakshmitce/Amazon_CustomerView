@@ -4,6 +4,5 @@ This is an Amazon-like storefront using Node.js and MySQL. The app takes in orde
 
 # Amazon_CustomerView:
 
+Amazon customer/Manager/Supervisior project video demo:
 
-<link href="../Amazon_CustomerView/Jul 9 2019 11_39 AM" rel="stylesheet">
-<script src="../Amazon_CustomerView/Jul 9 2019 11_39 AM"></script>
