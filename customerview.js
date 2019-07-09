@@ -55,7 +55,7 @@ connection.query("SELECT * FROM products_custmer", function (err, res) {
                 var totalProductQuantity = productresult[0].stock_quantity - user_Quantity;
                 var totalProductPurchasePrice = user_Quantity * productresult[0].price;
                 var sold_item = parseInt(productresult[0].Sold_item) + parseInt(user_Quantity);
-                sold_item = 0;
+             
 
 
                 var porductSale = parseInt(productresult[0].product_Sale) + parseInt(totalProductPurchasePrice);

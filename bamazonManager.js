@@ -119,7 +119,7 @@ inquirer.prompt([{
             message: "What's your Product Stock Quantity do you wnat to add?"
         }]).then(function (answer) {
 
-            connection.query("INSERT INTO products_custmer (product_name,department_name, price, stock_quantity,Sold_item) VALUES (?,?,?,?,?)", [answer.userProductName, answer.userDepartName, answer.userProductPrice, answer.userQuantity, 0], function (error, res) {
+            connection.query("INSERT INTO products_custmer (product_name,department_name, price, stock_quantity,Sold_item,product_Sale) VALUES (?,?,?,?,?,0)", [answer.userProductName, answer.userDepartName, answer.userProductPrice, answer.userQuantity, 0], function (error, res) {
                 if (error) throw error;
                 var affectedrows = res.affectedRows;
                 console.log("************************************\n");
