@@ -6,7 +6,7 @@ This is an Amazon-like storefront using Node.js and MySQL. The app takes in orde
 
 Amazon customer/Manager/Supervisior project video demo:
 
-[Amazon video](https://drive.google.com/file/d/1fzHvtWDDkkSsd4oHf0BrXECBoJR0L3cN/view?usp=sharing)
+[Amazon customer/manager/supervisor view video](https://drive.google.com/file/d/1F0majKwWUfkS46LHoPu2J9E8gf-UB2Ll/view?usp=sharing)
 
 # Amazon_CustomerView:
 1.Create a MySQL Database called `bamazon`.

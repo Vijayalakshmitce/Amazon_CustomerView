@@ -40,8 +40,9 @@ inquirer.prompt([{
     ///if end clousure here
     else if (userChoice.managerList === "View Low Inventory") {
 
-        connection.query("SELECT item_id,product_name,stock_quantity FROM products_custmer where stock_quantity < 5", function (error, inventres) {
+        connection.query("SELECT item_id,product_name,stock_quantity,Sold_item FROM products_custmer where stock_quantity < 5", function (error, inventres) {
             if (error) throw error;
+           
             for (var i = 0; i < inventres.length; i++) {
                 var productID = inventres[i].item_id;
                 var productName = inventres[i].product_name;
@@ -52,7 +53,7 @@ inquirer.prompt([{
                 console.log("Product ID: " + productID);
                 console.log("Product Name: " + productName);
                 console.log("Product Quantity: " + productQuantity);
-                console.log("Product Sold: " + productSold);
+                console.log("Product Sold: " + inventres[i].Sold_item);
                 console.log("_________________________________________\n");
 
             }
