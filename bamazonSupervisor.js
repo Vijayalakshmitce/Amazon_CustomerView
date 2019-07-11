@@ -6,7 +6,7 @@ var table = new Table({
     defaultValue: 0, //defaults to "?"
     errorOnNull: false, //defaults to false but shown for illustration
     head: ['DEPARTMENT_ID', 'DEPARTMENT_NAME', 'OVER_HEAD_COST', 'PRODUCT_SALE', 'TOTAL'],
-    colWidths: [30, 30, 30, 30, 30]
+    colWidths: [20, 20, 20, 20, 20]
 });
 
 //connection declare start
